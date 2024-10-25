@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venda de doces, biscoitos e finis em apoio à Criança mais feliz.">
+    <title>Potes dos Piás - Venda de Doces</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('333.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            line-height: 1.6;
+            height: 100%;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Animação de escrita no título */
+        .typing {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid #ff9800;
+            animation: typing 3s steps(30) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header a {
+            background-color: #ff9800;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        header a:hover {
+            background-color: #e68900;
+        }
+
+        section {
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .address, .date, .pix {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .pix {
+            color: #4caf50;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .typing {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Adicionando a animação ao título -->
+        <h1 class="typing">Potes dos Piás</h1>
+        <p>Participe da nossa venda de doces, biscoitos e finis para apoiar a instituição <strong>Criança Mais Feliz</strong>.</p>
+        <a href="#venda">Saiba Mais</a>
+    </header>
+
+    <section id="venda">
+        <h2>Detalhes da Venda</h2>
+        <p class="address">Endereço: R. Rubéns Galvão de França, 923<br>Parque Boturussu, São Paulo - SP, 03804-010</p>
+        <p class="date">Data da Venda: 26/10/2024</p>
+        <p class="pix">PIX para doações: 47917933822</p>
+        <a href="https://criancamaisfelizrs.org.br/" target="_blank" class="button">Saiba mais sobre a instituição</a>
+    </section>
+
+    <footer>
+        <p>Todos os direitos reservados © Potes dos Piás 2024</p>
+        <p><a href="https://criancamaisfelizrs.org.br/" target="_blank">Criança Mais Feliz</a></p>
+    </footer>
+
+</body>
+</html>
